@@ -1,0 +1,45 @@
+// Частковий ресет
+body {
+  font-family: var(--main-font);
+  color: var(--main-txt-cl);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
