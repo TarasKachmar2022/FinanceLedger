@@ -1,7 +1,10 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #e0e;
 }
 
 .header__logo {
@@ -16,8 +19,7 @@
   justify-content: center;
   gap: 14px;
 }
-.site-nav__item {
-}
+
 .site-nav__link {
   line-height: 1.63em;
 }

@@ -1,0 +1,23 @@
+.hero {
+  margin: 0 auto;
+  padding-top: 144px;
+  padding-bottom: 95px;
+  color: var(--hero-txt-cl);
+  text-align: center;
+  background-color: var(--background-dark-cl);
+  background-image: url('./../images/hero/hero-bg.jpg');
+  background-position: center center; // x y
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 320px;
+}
+
+.hero__title {
+  margin-bottom: 16px;
+}
+
+.hero__descr {
+  font-size: 22px;
+  line-height: 1.68;
+  margin-bottom: 27px;
+}

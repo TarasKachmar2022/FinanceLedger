@@ -1,0 +1,34 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  line-height: 1.63;
+  color: var(--btn-txt-cl);
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-btn);
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-right: 31px;
+  padding-bottom: 10px;
+  padding-left: 31px;
+
+  &--no-transparent {
+    border: transparent;
+    background-color: var(--accent-cl);
+    transition-property: background-color;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-hovered-cl);
+    }
+  }
+}
+
+.btn__icon {
+  fill: currentColor;
+}
