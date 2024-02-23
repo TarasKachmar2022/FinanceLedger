@@ -1,0 +1,43 @@
+.contact {
+  color: var(--secondary-txt-cl);
+  background-color: var(--background-contact-cl);
+}
+
+.contact__img {
+  margin-left: -20px;
+  max-width: 320px;
+}
+.contact__wrap {
+  @include section(26, 30);
+}
+
+.contact__title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+}
+.contact__title {
+  width: 147px;
+  margin-bottom: 34px;
+}
+
+.form__input {
+  border: transparent;
+  border-radius: 4px;
+  width: 260px;
+  height: 40px;
+  padding: 0 10;
+  margin-bottom: 36px;
+  margin-left: 10px;
+  outline: transparent;
+
+  &::placeholder {
+    font-style: italic;
+    color: var(--placeholder-contact-cl);
+  }
+}
+
+.contact__btn {
+  width: 100%;
+  margin-top: 17px;
+}
