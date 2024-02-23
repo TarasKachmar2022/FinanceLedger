@@ -22,4 +22,12 @@
 
 .site-nav__link {
   line-height: 1.63em;
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
 }
