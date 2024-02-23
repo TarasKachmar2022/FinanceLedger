@@ -4,12 +4,20 @@
   background-color: #e0e;
 }
 
+.header__logo {
+  margin-bottom: 11px;
+}
+
 .site-nav {
 }
 
 .site-nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
 }
 .site-nav__item {
 }
 .site-nav__link {
+  line-height: 1.63em;
 }
