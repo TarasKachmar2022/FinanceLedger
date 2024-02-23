@@ -28,4 +28,9 @@
 
 .blog__btn {
   height: 47px;
+
+  &:hover,
+  &:focus {
+    color: var(--btn-blog-txt-cl);
+  }
 }

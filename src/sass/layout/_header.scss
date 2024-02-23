@@ -5,6 +5,9 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
+  transition-property: background-color, backdrop-filter;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 
   &--no-transparency {
     background-color: var(--background-header-cl);

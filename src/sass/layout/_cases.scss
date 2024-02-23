@@ -25,6 +25,6 @@
   justify-content: center;
 }
 
-.cases__item {
+.cases__item:not(:last-child) {
   margin-bottom: 7px;
 }
