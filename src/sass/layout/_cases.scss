@@ -1,0 +1,21 @@
+.cases {
+  @include section(50, 46);
+  color: var(--secondary-txt-cl);
+  text-align: center;
+}
+
+.cases__uppertitle {
+  margin-bottom: 15px;
+}
+
+.cases__title {
+  width: 219px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 35px;
+}
+
+.cases__descr {
+  line-height: 1.63;
+  margin-bottom: 37px;
+}
