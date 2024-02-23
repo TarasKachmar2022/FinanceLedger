@@ -1,0 +1,32 @@
+.about {
+  background-color: var(--accent-cl);
+}
+
+.about__img {
+  max-width: 320px;
+  margin-left: -20px;
+}
+
+.about__text-wrap {
+  @include section();
+  padding-left: 10px;
+}
+
+.about__uppertitle {
+  margin-bottom: 5px;
+}
+
+.about__title {
+  margin-bottom: 25px;
+}
+
+.about__descr {
+  line-height: 1.63;
+  max-width: 260px;
+  margin-bottom: 14px;
+  letter-spacing: 0em;
+}
+
+.about__btn {
+  min-width: 158px;
+}

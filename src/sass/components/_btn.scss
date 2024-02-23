@@ -14,16 +14,26 @@
   padding-right: 31px;
   padding-bottom: 10px;
   padding-left: 31px;
+  transition-property: background-color, color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+    background-color: var(--background-btn-white-cl);
+  }
 
   &--no-transparent {
     border: transparent;
     background-color: var(--accent-cl);
-    transition-property: background-color;
+    transition-property: background-color, color;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-function);
 
     &:hover,
     &:focus {
+      color: var(--btn-txt-cl);
       background-color: var(--accent-hovered-cl);
     }
   }
