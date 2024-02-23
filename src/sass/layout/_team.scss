@@ -1,0 +1,36 @@
+.team {
+  @include section(50, 39);
+  color: var(--secondary-txt-cl);
+  text-align: center;
+}
+
+.team__uppertitle {
+  margin-bottom: 15px;
+}
+
+.team__title {
+  margin-bottom: 35px;
+}
+
+.team__descr {
+  line-height: 1.63;
+  margin-bottom: 37px;
+}
+.team__list {
+  --item: 1;
+}
+.team__img {
+}
+
+.team__text-wrap {
+  padding: 11px;
+}
+.team__subtitle {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.26;
+  margin-bottom: 11px;
+}
+.team__subdescr {
+  line-height: 1.63;
+}
