@@ -7,4 +7,12 @@
 
 .social__link {
   fill: currentColor;
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
 }
