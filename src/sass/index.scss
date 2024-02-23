@@ -2,6 +2,8 @@
 @import './base/reset';
 @import './base/variables';
 
+@import './utils/mixins';
+
 @import './components/container';
 @import './components/logo';
 @import './components/nav';
@@ -11,5 +13,3 @@
 @import './layout/header';
 @import './layout/hero';
 @import './layout/features';
-
-@import './utils/mixins';

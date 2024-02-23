@@ -1,7 +1,6 @@
 .hero {
+  @include section(144, 95);
   margin: 0 auto;
-  padding-top: 144px;
-  padding-bottom: 95px;
   color: var(--hero-txt-cl);
   text-align: center;
   background-color: var(--background-dark-cl);
