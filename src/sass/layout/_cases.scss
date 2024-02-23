@@ -19,3 +19,12 @@
   line-height: 1.63;
   margin-bottom: 37px;
 }
+
+.cases__list {
+  --item: 1;
+  justify-content: center;
+}
+
+.cases__item {
+  margin-bottom: 7px;
+}
