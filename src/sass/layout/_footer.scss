@@ -1,0 +1,9 @@
+.footer {
+  @include section(20, 20);
+  background-color: var(--background-footer-cl);
+}
+
+.footer__copyright {
+  line-height: 1.63;
+  text-align: center;
+}
