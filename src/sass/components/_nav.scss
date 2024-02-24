@@ -2,6 +2,14 @@
   display: flex;
   justify-content: center;
   gap: 14px;
+
+  @media screen and (min-width: 768px) {
+    gap: 19px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    gap: 38px;
+  }
 }
 
 .site-nav__link {
@@ -9,6 +17,11 @@
   transition-property: color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 
   &:hover,
   &:focus {
