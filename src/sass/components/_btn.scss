@@ -18,6 +18,11 @@
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
   &:hover,
   &:focus {
     color: var(--accent-cl);
