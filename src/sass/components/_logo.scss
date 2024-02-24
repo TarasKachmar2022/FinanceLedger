@@ -5,13 +5,26 @@
   font-size: 32px;
   line-height: 1.31;
   color: var(--accent-cl);
+
+  @media screen and (min-width: 768px) {
+    font-size: 35px;
+    line-height: 1.2;
+  }
 }
 
 .logo__icon {
   margin-right: 6px;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 10px;
+  }
 }
 
 .logo__txt {
   color: var(--main-txt-cl);
+
+  @media screen and (min-width: 768px) {
+    margin-left: 10px;
+  }
 }
