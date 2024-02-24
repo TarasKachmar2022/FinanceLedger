@@ -13,6 +13,9 @@
   @media screen and (min-width: 768px) {
     @include section(407, 412);
   }
+  @media screen and (min-width: 1360px) {
+    @include section(209, 284);
+  }
 }
 
 .hero__title {

@@ -9,6 +9,10 @@
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 
+  @media screen and (min-width: 768px) {
+    @include section(10, 10);
+  }
+
   &--no-transparency {
     background-color: var(--background-header-cl);
     backdrop-filter: blur(4px);
