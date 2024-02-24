@@ -13,10 +13,24 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
 }
 
 .section-title {
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
+}
+
+.description {
+  line-height: 1.63;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }

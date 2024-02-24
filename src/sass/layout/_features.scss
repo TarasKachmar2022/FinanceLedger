@@ -1,12 +1,37 @@
 .features {
   @include section();
+
+  @media screen and (min-width: 768px) {
+    @include section(40, 47);
+  }
+
+  @media screen and (min-width: 1360px) {
+    @include section(40, 19);
+  }
 }
 
 .features__list {
-  display: flex;
-  gap: 18px;
-  flex-direction: column;
   text-align: center;
+
+  @media screen and (max-width: 767px) {
+    --item: 1;
+    --indent: 18px;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    --item: 3;
+    --indent: 53px;
+    padding-right: 33px;
+    padding-left: 33px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    --item: 3;
+    --indent: 71px;
+    padding-right: 66px;
+    padding-left: 66px;
+  }
 }
 
 .features__wrap {
@@ -17,20 +42,28 @@
   margin-right: auto;
   margin-bottom: 11px;
   margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 67px;
+    height: 67px;
+  }
 }
 
 .features__icon {
   display: block;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    width: 35px;
+    height: 35px;
+  }
 }
+
 .features__title {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
   color: var(--secondary-txt-cl);
   margin-bottom: 15px;
 }
+
 .features__descr {
-  line-height: 1.63;
   color: var(--secondary-txt-cl);
 }
