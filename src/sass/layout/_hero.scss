@@ -8,19 +8,35 @@
   background-position: center center; // x y
   background-size: cover;
   background-repeat: no-repeat;
-  // max-width: 320px;
+  max-width: 1360px;
+
+  @media screen and (min-width: 768px) {
+    @include section(407, 412);
+  }
 }
 
 .hero__title {
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
 }
 
 .hero__descr {
   font-size: 22px;
   line-height: 1.68;
   margin-bottom: 27px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 29px;
+  }
 }
 
 .hero__btn {
   height: 45px;
+
+  @media screen and (min-width: 768px) {
+    height: 48px;
+  }
 }
