@@ -3,24 +3,67 @@
   background-color: var(--background-contact-cl);
 }
 
-.contact__img {
-  margin-left: -20px;
-  max-width: 320px;
+.contact__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
+
+.contact__thumb {
+  width: 320px;
+  margin-left: -20px;
+
+  @media screen and (min-width: 768px) {
+    width: 384px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    width: 680px;
+  }
+}
+
+.contact__img {
+  max-width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+}
+
 .contact__wrap {
   @include section(26, 30);
   padding-right: 10px;
   padding-left: 10px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 30px;
+    width: 364px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    @include section(78, 82);
+    width: 660px;
+  }
 }
 
 .contact__title {
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
+
+  @media screen and (min-width: 1360px) {
+    font-size: 38px;
+    line-height: 1.26;
+  }
 }
+
 .contact__title {
   width: 147px;
   margin-bottom: 34px;
+
+  @media screen and (min-width: 768px) {
+    width: 305px;
+  }
 }
 
 .form__input {
@@ -32,6 +75,10 @@
   margin-bottom: 36px;
   outline: transparent;
 
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+
   &::placeholder {
     font-style: italic;
     color: var(--placeholder-contact-cl);
@@ -42,4 +89,8 @@
   width: 100%;
   height: 42px;
   margin-top: 17px;
+
+  @media screen and (min-width: 1360px) {
+    margin-top: 24px;
+  }
 }
