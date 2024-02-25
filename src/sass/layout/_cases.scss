@@ -9,10 +9,13 @@
 }
 
 .cases__title {
-  width: 219px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 35px;
+
+  @media screen and (max-width: 767px) {
+    width: 219px;
+  }
 }
 
 .cases__descr {
