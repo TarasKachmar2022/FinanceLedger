@@ -16,15 +16,17 @@
 }
 
 .cases__descr {
-  line-height: 1.63;
   margin-bottom: 37px;
 }
 
 .cases__list {
   --item: 1;
+  --indent: 8px;
   justify-content: center;
-}
 
-.cases__item:not(:last-child) {
-  margin-bottom: 7px;
+  @media screen and (min-width: 768px) {
+    --item: 4;
+    height: 476px;
+    writing-mode: vertical-lr;
+  }
 }
