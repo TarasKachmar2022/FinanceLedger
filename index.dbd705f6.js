@@ -1,2 +1,0 @@
-window.onscroll=()=>function(){const e=document.querySelector("[data-header]"),t=e.offsetHeight;window.pageYOffset>t?e.classList.add("header--no-transparency"):e.classList.remove("header--no-transparency")}(),document.querySelectorAll("a.site-nav__link").forEach((e=>{e.addEventListener("click",(function(e){e.preventDefault();const t=this.getAttribute("href").substring(1),n=document.getElementById(t).getBoundingClientRect().top-119;window.scrollBy({top:n,behavior:"smooth"})}))}));
-//# sourceMappingURL=index.dbd705f6.js.map
