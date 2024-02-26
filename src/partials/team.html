@@ -9,13 +9,79 @@
     <ul class="team__list card-set">
       <li class="team__item card-item">
         <div class="team__wrap">
-          <img
-            class="team__img"
-            src="./images/team/team-1.jpg"
-            alt="John Doe"
-            width="420"
-            height="186"
-          />
+          <picture>
+            <!-- desktop screen -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/team/team-1_d.webp    1x,
+                ./images/team/team-1@2x_d.webp 2x,
+                ./images/team/team-1@3x_d.webp 3x,
+                ./images/team/team-1@4x_d.webp 4x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/team/team-1_d.jpg    1x,
+                ./images/team/team-1@2x_d.jpg 2x,
+                ./images/team/team-1@3x_d.jpg 3x,
+                ./images/team/team-1@4x_d.jpg 4x
+              "
+              type="image/jpg"
+            />
+            <!-- tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/team/team-1_t.webp    1x,
+                ./images/team/team-1@2x_t.webp 2x,
+                ./images/team/team-1@3x_t.webp 3x,
+                ./images/team/team-1@4x_t.webp 4x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/team/team-1_t.jpg    1x,
+                ./images/team/team-1@2x_t.jpg 2x,
+                ./images/team/team-1@3x_t.jpg 3x,
+                ./images/team/team-1@4x_t.jpg 4x
+              "
+              type="image/jpg"
+            />
+            <!-- mobile screen -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/team/team-1_m.webp    1x,
+                ./images/team/team-1@2x_m.webp 2x,
+                ./images/team/team-1@3x_m.webp 3x,
+                ./images/team/team-1@4x_m.webp 4x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/team/team-1_m.jpg    1x,
+                ./images/team/team-1@2x_m.jpg 2x,
+                ./images/team/team-1@3x_m.jpg 3x,
+                ./images/team/team-1@4x_m.jpg 4x
+              "
+              type="image/jpg"
+            />
+            <!-- fallback -->
+            <img
+              class="team__img"
+              src="./images/team/team-1_d.jpg"
+              alt="John Doe"
+              width="420"
+              height="186"
+            />
+          </picture>
           <ul class="team__social social">
             <li>
               <a
@@ -78,13 +144,79 @@
       </li>
       <li class="card-item">
         <div class="team__wrap">
-          <img
-            class="team__img"
-            src="./images/team/team-2.jpg"
-            alt="Jane Doe"
-            width="420"
-            height="186"
-          />
+          <picture>
+            <!-- desktop screen -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/team/team-2_d.webp    1x,
+                ./images/team/team-2@2x_d.webp 2x,
+                ./images/team/team-2@3x_d.webp 3x,
+                ./images/team/team-2@4x_d.webp 4x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/team/team-2_d.jpg    1x,
+                ./images/team/team-2@2x_d.jpg 2x,
+                ./images/team/team-2@3x_d.jpg 3x,
+                ./images/team/team-2@4x_d.jpg 4x
+              "
+              type="image/jpg"
+            />
+            <!-- tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/team/team-2_t.webp    1x,
+                ./images/team/team-2@2x_t.webp 2x,
+                ./images/team/team-2@3x_t.webp 3x,
+                ./images/team/team-2@4x_t.webp 4x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/team/team-2_t.jpg    1x,
+                ./images/team/team-2@2x_t.jpg 2x,
+                ./images/team/team-2@3x_t.jpg 3x,
+                ./images/team/team-2@4x_t.jpg 4x
+              "
+              type="image/jpg"
+            />
+            <!-- mobile screen -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/team/team-2_m.webp    1x,
+                ./images/team/team-2@2x_m.webp 2x,
+                ./images/team/team-2@3x_m.webp 3x,
+                ./images/team/team-2@4x_m.webp 4x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/team/team-2_m.jpg    1x,
+                ./images/team/team-2@2x_m.jpg 2x,
+                ./images/team/team-2@3x_m.jpg 3x,
+                ./images/team/team-2@4x_m.jpg 4x
+              "
+              type="image/jpg"
+            />
+            <!-- fallback -->
+            <img
+              class="team__img"
+              src="./images/team/team-2_d.jpg"
+              alt="Jane Doe"
+              width="420"
+              height="186"
+            />
+          </picture>
           <ul class="team__social social">
             <li>
               <a
@@ -147,13 +279,79 @@
       </li>
       <li class="card-item">
         <div class="team__wrap">
-          <img
-            class="team__img"
-            src="./images/team/team-3.jpg"
-            alt="Steve Smith"
-            width="420"
-            height="186"
-          />
+          <picture>
+            <!-- desktop screen -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/team/team-3_d.webp    1x,
+                ./images/team/team-3@2x_d.webp 2x,
+                ./images/team/team-3@3x_d.webp 3x,
+                ./images/team/team-3@4x_d.webp 4x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/team/team-3_d.jpg    1x,
+                ./images/team/team-3@2x_d.jpg 2x,
+                ./images/team/team-3@3x_d.jpg 3x,
+                ./images/team/team-3@4x_d.jpg 4x
+              "
+              type="image/jpg"
+            />
+            <!-- tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/team/team-3_t.webp    1x,
+                ./images/team/team-3@2x_t.webp 2x,
+                ./images/team/team-3@3x_t.webp 3x,
+                ./images/team/team-3@4x_t.webp 4x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/team/team-3_t.jpg    1x,
+                ./images/team/team-3@2x_t.jpg 2x,
+                ./images/team/team-3@3x_t.jpg 3x,
+                ./images/team/team-3@4x_t.jpg 4x
+              "
+              type="image/jpg"
+            />
+            <!-- mobile screen -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/team/team-3_m.webp    1x,
+                ./images/team/team-3@2x_m.webp 2x,
+                ./images/team/team-3@3x_m.webp 3x,
+                ./images/team/team-3@4x_m.webp 4x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/team/team-3_m.jpg    1x,
+                ./images/team/team-3@2x_m.jpg 2x,
+                ./images/team/team-3@3x_m.jpg 3x,
+                ./images/team/team-3@4x_m.jpg 4x
+              "
+              type="image/jpg"
+            />
+            <!-- fallback -->
+            <img
+              class="team__img"
+              src="./images/team/team-3_d.jpg"
+              alt="Steve Smith"
+              width="420"
+              height="186"
+            />
+          </picture>
           <ul class="team__social social">
             <li>
               <a
