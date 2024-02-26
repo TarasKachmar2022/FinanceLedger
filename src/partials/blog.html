@@ -1,12 +1,78 @@
 <section class="blog" id="blog">
   <div class="blog__container container">
     <div class="blog__thumb">
-      <img
-        src="./images/blog/blog-1.jpg"
-        alt="Notebook"
-        width="680"
-        height="247"
-      />
+      <picture>
+        <!-- desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/blog/blog-1_d.webp    1x,
+            ./images/blog/blog-1@2x_d.webp 2x,
+            ./images/blog/blog-1@3x_d.webp 3x,
+            ./images/blog/blog-1@4x_d.webp 4x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/blog/blog-1_d.jpg    1x,
+            ./images/blog/blog-1@2x_d.jpg 2x,
+            ./images/blog/blog-1@3x_d.jpg 3x,
+            ./images/blog/blog-1@4x_d.jpg 4x
+          "
+          type="image/jpg"
+        />
+        <!-- tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/blog/blog-1_t.webp    1x,
+            ./images/blog/blog-1@2x_t.webp 2x,
+            ./images/blog/blog-1@3x_t.webp 3x,
+            ./images/blog/blog-1@4x_t.webp 4x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/blog/blog-1_t.jpg    1x,
+            ./images/blog/blog-1@2x_t.jpg 2x,
+            ./images/blog/blog-1@3x_t.jpg 3x,
+            ./images/blog/blog-1@4x_t.jpg 4x
+          "
+          type="image/jpg"
+        />
+        <!-- mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/blog/blog-1_m.webp    1x,
+            ./images/blog/blog-1@2x_m.webp 2x,
+            ./images/blog/blog-1@3x_m.webp 3x,
+            ./images/blog/blog-1@4x_m.webp 4x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/blog/blog-1_m.jpg    1x,
+            ./images/blog/blog-1@2x_m.jpg 2x,
+            ./images/blog/blog-1@3x_m.jpg 3x,
+            ./images/blog/blog-1@4x_m.jpg 4x
+          "
+          type="image/jpg"
+        />
+        <!-- fallback -->
+        <img
+          src="./images/blog/blog-1_d.jpg"
+          alt="Notebook"
+          width="680"
+          height="247"
+        />
+      </picture>
     </div>
     <div class="blog__text-wrap">
       <p class="blog__uppertitle uppertitle">April 16 2020</p>
@@ -17,7 +83,7 @@
         harum illum dolore explicabo ab dolores itaque rerum temporibus
         doloribus iste maiores deleniti?
       </p>
-      <a class="blog__btn btn" href="">Read Our Blog</a>
+      <a class="blog__btn btn" href="./">Read Our Blog</a>
     </div>
   </div>
 </section>
