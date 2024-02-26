@@ -1,5 +1,5 @@
 .header {
-  @include section(20, 20);
+  @include section(10, 10);
   position: fixed;
   top: 0;
   left: 50%;
@@ -11,7 +11,7 @@
   transition-timing-function: var(--timing-function);
 
   @media screen and (min-width: 768px) {
-    @include section(10, 10);
+    @include section(20, 20);
   }
 
   &--no-transparency {

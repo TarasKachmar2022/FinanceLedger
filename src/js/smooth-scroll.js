@@ -6,7 +6,7 @@ document.querySelectorAll('a.site-nav__link').forEach(link => {
 
     const scrollTarget = document.getElementById(href);
 
-    const topOffset = 119;
+    const topOffset = 99;
     const elementPosition = scrollTarget.getBoundingClientRect().top;
     const offsetPosition = elementPosition - topOffset;
 
