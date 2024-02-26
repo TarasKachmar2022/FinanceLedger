@@ -1,13 +1,79 @@
 <section class="about" id="about">
   <div class="about__container container">
     <div class="about__thumb">
-      <img
-        class="about__img"
-        src="./images/about/about-1.jpg"
-        alt="People"
-        width="320"
-        height="220"
-      />
+      <picture>
+        <!-- desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/about/about-1_d.webp    1x,
+            ./images/about/about-1@2x_d.webp 2x,
+            ./images/about/about-1@3x_d.webp 3x,
+            ./images/about/about-1@4x_d.webp 4x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/about/about-1_d.jpg    1x,
+            ./images/about/about-1@2x_d.jpg 2x,
+            ./images/about/about-1@3x_d.jpg 3x,
+            ./images/about/about-1@4x_d.jpg 4x
+          "
+          type="image/jpg"
+        />
+        <!-- tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/about/about-1_t.webp    1x,
+            ./images/about/about-1@2x_t.webp 2x,
+            ./images/about/about-1@3x_t.webp 3x,
+            ./images/about/about-1@4x_t.webp 4x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/about/about-1_t.jpg    1x,
+            ./images/about/about-1@2x_t.jpg 2x,
+            ./images/about/about-1@3x_t.jpg 3x,
+            ./images/about/about-1@4x_t.jpg 4x
+          "
+          type="image/jpg"
+        />
+        <!-- mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/about/about-1_m.webp    1x,
+            ./images/about/about-1@2x_m.webp 2x,
+            ./images/about/about-1@3x_m.webp 3x,
+            ./images/about/about-1@4x_m.webp 4x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/about/about-1_m.jpg    1x,
+            ./images/about/about-1@2x_m.jpg 2x,
+            ./images/about/about-1@3x_m.jpg 3x,
+            ./images/about/about-1@4x_m.jpg 4x
+          "
+          type="image/jpg"
+        />
+        <!-- fallback -->
+        <img
+          class="about__img"
+          src="./images/about/about-1_d.jpg"
+          alt="People"
+          width="680"
+          height="220"
+        />
+      </picture>
     </div>
     <div class="about__text-wrap">
       <p class="about__uppertitle uppertitle">What you are looking for</p>
