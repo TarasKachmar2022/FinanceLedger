@@ -1,13 +1,79 @@
 <section class="contact" id="contact">
   <div class="contact__container container">
     <div class="contact__thumb">
-      <img
-        class="contact__img"
-        src="./images/contact/contact-img.jpg"
-        alt="A man is sitting at a laptop"
-        width="680"
-        height="220"
-      />
+      <picture>
+        <!-- desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/contact/contact_d.webp    1x,
+            ./images/contact/contact@2x_d.webp 2x,
+            ./images/contact/contact@3x_d.webp 3x,
+            ./images/contact/contact@4x_d.webp 4x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/contact/contact_d.jpg    1x,
+            ./images/contact/contact@2x_d.jpg 2x,
+            ./images/contact/contact@3x_d.jpg 3x,
+            ./images/contact/contact@4x_d.jpg 4x
+          "
+          type="image/jpg"
+        />
+        <!-- tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/contact/contact_t.webp    1x,
+            ./images/contact/contact@2x_t.webp 2x,
+            ./images/contact/contact@3x_t.webp 3x,
+            ./images/contact/contact@4x_t.webp 4x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/contact/contact_t.jpg    1x,
+            ./images/contact/contact@2x_t.jpg 2x,
+            ./images/contact/contact@3x_t.jpg 3x,
+            ./images/contact/contact@4x_t.jpg 4x
+          "
+          type="image/jpg"
+        />
+        <!-- mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/contact/contact_m.webp    1x,
+            ./images/contact/contact@2x_m.webp 2x,
+            ./images/contact/contact@3x_m.webp 3x,
+            ./images/contact/contact@4x_m.webp 4x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/contact/contact_m.jpg    1x,
+            ./images/contact/contact@2x_m.jpg 2x,
+            ./images/contact/contact@3x_m.jpg 3x,
+            ./images/contact/contact@4x_m.jpg 4x
+          "
+          type="image/jpg"
+        />
+        <!-- fallback -->
+        <img
+          class="contact__img"
+          src="./images/contact/contact_d.jpg"
+          alt="A man is sitting at a laptop"
+          width="680"
+          height="220"
+        />
+      </picture>
     </div>
     <div class="contact__wrap">
       <h2 class="contact__title">Request Callback</h2>
