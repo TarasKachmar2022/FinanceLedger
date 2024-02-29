@@ -54,7 +54,6 @@ function offset(el) {
 function changeSection(animItem) {
   const navElements = document.querySelectorAll('a.site-nav__link');
   const elementID = animItem.getAttribute('id');
-  let navID = null;
   console.log(elementID);
   for (let index = 0; index < navElements.length; index++) {
     const navElement = navElements[index];
@@ -67,10 +66,8 @@ function changeSection(animItem) {
     }
   }
   const elementsForDelete = document.querySelectorAll('._active');
-  // const deleteElementID = elementsForDelete.getAttribute('id');
   console.log(elementsForDelete);
   if (elementsForDelete.length <= 1) return;
-  // if (elementsForDelete.length > 1) {
   for (let index = 0; index < elementsForDelete.length; index++) {
     const elementForDelete = elementsForDelete[index];
     console.log(elementForDelete);
@@ -78,7 +75,6 @@ function changeSection(animItem) {
       elementForDelete.classList.remove('_active');
     }
   }
-  // }
 }
 
 animOnScroll();
