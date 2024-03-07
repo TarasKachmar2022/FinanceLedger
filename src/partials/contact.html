@@ -78,25 +78,29 @@
     <div class="contact__wrap">
       <h2 class="contact__title">Request Callback</h2>
       <form name="" autocomplete="on">
-        <label class="form__label">
+        <div class="form__wrap">
           <input
             class="form__input"
             type="text"
             name="name"
-            placeholder="Enter your name"
+            id="name"
+            placeholder=""
             pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
             title="Username must be two words separated by space."
           />
-        </label>
-        <label class="form__label">
+          <label class="form__label" for="name">Enter your name</label>
+        </div>
+        <div class="form__wrap">
           <input
             class="form__input"
             type="email"
             name="email"
-            placeholder="Enter email*"
+            id="email"
+            placeholder=""
             required
           />
-        </label>
+          <label class="form__label" for="email">Enter email*</label>
+        </div>
         <button class="contact__btn btn btn--no-transparent" type="submit">
           Send
         </button>
