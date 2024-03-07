@@ -3,6 +3,10 @@ const animNavItems = document.querySelectorAll('._yakir');
 if (animNavItems.length > 0) {
   window.addEventListener('scroll', animNavOnScroll);
 
+  let topOffset;
+
+  topOffset = topOffsetSelector();
+
   function selectLastItem() {
     let lastItem = [];
     for (let index = 0; index < animNavItems.length; index++) {
@@ -18,7 +22,6 @@ if (animNavItems.length > 0) {
       const animNavItemOffset = offset(animNavItem).top;
       const pageHeight = document.body.scrollHeight;
       const vh = window.innerHeight;
-      const topOffset = 99;
       if (
         (pageYOffset + topOffset > animNavItemOffset &&
           pageYOffset + topOffset < animNavItemOffset + animNavItemHeight) ||
@@ -28,6 +31,18 @@ if (animNavItems.length > 0) {
         changeSection(animNavItem);
       }
     }
+  }
+}
+
+function topOffsetSelector() {
+  const viewportWidth = window.innerWidth;
+
+  if (viewportWidth >= 768) {
+    topOffset = 90;
+    return topOffset;
+  } else {
+    topOffset = 120;
+    return topOffset;
   }
 }
 
