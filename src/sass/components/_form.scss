@@ -1,0 +1,48 @@
+.form__wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.form__label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-style: italic;
+  color: var(--placeholder-contact-cl);
+  transform: translateY(-50%);
+  transform-origin: top left;
+  transition-property: transform;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  .form__input:hover + &,
+  .form__input:focus + &,
+  .form__input:not(:placeholder-shown) + & {
+    transform: translateY(-200%) scale(0.8);
+  }
+}
+
+.form__input {
+  border: transparent;
+  border-radius: 4px;
+  width: 260px;
+  height: 40px;
+  padding: 0 10;
+  outline: transparent;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+}
+
+.form__btn {
+  width: 100%;
+  height: 42px;
+  margin-top: 17px;
+
+  @media screen and (min-width: 1360px) {
+    margin-top: 24px;
+  }
+}
