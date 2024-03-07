@@ -2,9 +2,8 @@
   @include section(10, 10);
   position: fixed;
   top: 0;
-  left: 50%;
+  left: 0;
   width: 100%;
-  transform: translateX(-50%);
   z-index: 10;
   transition-property: background-color, backdrop-filter;
   transition-duration: var(--duration);
