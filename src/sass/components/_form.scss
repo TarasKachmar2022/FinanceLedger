@@ -17,7 +17,6 @@
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 
-  .form__input:hover + &,
   .form__input:focus + &,
   .form__input:not(:placeholder-shown) + & {
     transform: translateY(-200%) scale(0.8);
