@@ -11,3 +11,5 @@ function changeHeaderBackground() {
     header.classList.remove('header--no-transparency');
   }
 }
+
+changeHeaderBackground();
