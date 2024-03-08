@@ -44,6 +44,8 @@ if (animNavItems.length > 0) {
       return topOffset;
     }
   }
+
+  animNavOnScroll();
 }
 
 function offset(el) {
@@ -79,5 +81,3 @@ function deleteClass(elementID) {
     }
   }
 }
-
-animNavOnScroll();
