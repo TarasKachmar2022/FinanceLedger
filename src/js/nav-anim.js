@@ -32,17 +32,17 @@ if (animNavItems.length > 0) {
       }
     }
   }
-}
 
-function topOffsetSelector() {
-  const viewportWidth = window.innerWidth;
+  function topOffsetSelector() {
+    const viewportWidth = window.innerWidth;
 
-  if (viewportWidth >= 768) {
-    topOffset = 90;
-    return topOffset;
-  } else {
-    topOffset = 120;
-    return topOffset;
+    if (viewportWidth >= 768) {
+      topOffset = 90;
+      return topOffset;
+    } else {
+      topOffset = 120;
+      return topOffset;
+    }
   }
 }
 
