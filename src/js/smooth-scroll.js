@@ -14,16 +14,16 @@ document.querySelectorAll('a.site-nav__link').forEach(link => {
 
     window.scrollBy({ top: offsetPosition, behavior: 'smooth' });
   });
-});
 
-function topOffsetSelector() {
-  const viewportWidth = window.innerWidth;
+  function topOffsetSelector() {
+    const viewportWidth = window.innerWidth;
 
-  if (viewportWidth >= 768) {
-    topOffset = 82;
-    return topOffset;
-  } else {
-    topOffset = 104;
-    return topOffset;
+    if (viewportWidth >= 768) {
+      topOffset = 82;
+      return topOffset;
+    } else {
+      topOffset = 104;
+      return topOffset;
+    }
   }
-}
+});
