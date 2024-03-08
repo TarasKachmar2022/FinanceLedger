@@ -1,5 +1,5 @@
 document.querySelectorAll('a.site-nav__link').forEach(link => {
-  mobile = link.addEventListener('click', function (e) {
+  link.addEventListener('click', function (e) {
     e.preventDefault();
 
     const href = this.getAttribute('href').substring(1);
