@@ -6,24 +6,26 @@ document.querySelectorAll('a.site-nav__link').forEach(link => {
 
     const scrollTarget = document.getElementById(href);
 
-    let headerTopOffset = 0;
-    headerTopOffset = topOffsetSelector();
+    let topOffset = 0;
+    topOffset = topOffsetSelector();
 
     const elementPosition = scrollTarget.getBoundingClientRect().top;
-    const offsetPosition = elementPosition - headerTopOffset;
+    const offsetPosition = elementPosition - topOffset;
 
     window.scrollBy({ top: offsetPosition, behavior: 'smooth' });
   });
-
-  function topOffsetSelector() {
-    const viewportWidth = window.innerWidth;
-
-    if (viewportWidth >= 768) {
-      headerTopOffset = 82;
-      return headerTopOffset;
-    } else {
-      headerTopOffset = 104;
-      return headerTopOffset;
-    }
-  }
 });
+
+function topOffsetSelector() {
+  const viewportWidth = window.innerWidth;
+
+  let headerTopOffset;
+
+  if (viewportWidth >= 768) {
+    headerTopOffset = 82;
+    return headerTopOffset;
+  } else {
+    headerTopOffset = 104;
+    return headerTopOffset;
+  }
+}
