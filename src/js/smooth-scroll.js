@@ -6,11 +6,11 @@ document.querySelectorAll('a.site-nav__link').forEach(link => {
 
     const scrollTarget = document.getElementById(href);
 
-    let topOffset = 0;
-    topOffset = topOffsetSelector();
+    let headerTopOffset = 0;
+    headerTopOffset = topOffsetSelector();
 
     const elementPosition = scrollTarget.getBoundingClientRect().top;
-    const offsetPosition = elementPosition - topOffset;
+    const offsetPosition = elementPosition - headerTopOffset;
 
     window.scrollBy({ top: offsetPosition, behavior: 'smooth' });
   });
@@ -19,11 +19,11 @@ document.querySelectorAll('a.site-nav__link').forEach(link => {
     const viewportWidth = window.innerWidth;
 
     if (viewportWidth >= 768) {
-      topOffset = 82;
-      return topOffset;
+      headerTopOffset = 82;
+      return headerTopOffset;
     } else {
-      topOffset = 104;
-      return topOffset;
+      headerTopOffset = 104;
+      return headerTopOffset;
     }
   }
 });
