@@ -26,14 +26,10 @@
 .form__input {
   border: transparent;
   border-radius: 4px;
-  width: 260px;
   height: 40px;
   padding: 0 10;
   outline: transparent;
-
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .form__btn {

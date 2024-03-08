@@ -7,23 +7,23 @@
   background-position: center center; // x y
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1360px;
+  max-width: 320px;
   // {:mobile} screen
   background-image: url('../images/hero/hero-bg_m.jpg');
   background-image: -webkit-image-set(url('../images/hero/hero-bg_m.webp') 1x);
-  @include retina2 {
+  @include retinax2 {
     background-image: url('../images/hero/hero-bg@2x_m.jpg');
     background-image: -webkit-image-set(
       url('../images/hero/hero-bg@2x_m.webp') 2x
     );
   }
-  @include retina3 {
+  @include retinax3 {
     background-image: url('../images/hero/hero-bg@3x_m.jpg');
     background-image: -webkit-image-set(
       url('../images/hero/hero-bg@3x_m.webp') 3x
     );
   }
-  @include retina4 {
+  @include retinax4 {
     background-image: url('../images/hero/hero-bg@4x_m.jpg');
     background-image: -webkit-image-set(
       url('../images/hero/hero-bg@4x_m.webp') 4x
@@ -31,25 +31,26 @@
   }
 
   @media screen and (min-width: 768px) {
+    max-width: 768px;
     @include section(407, 412);
     // {:tablet} screen
     background-image: url('../images/hero/hero-bg_t.jpg');
     background-image: -webkit-image-set(
       url('../images/hero/hero-bg_t.webp') 1x
     );
-    @include retina2 {
+    @include retinax2 {
       background-image: url('../images/hero/hero-bg@2x_t.jpg');
       background-image: -webkit-image-set(
         url('../images/hero/hero-bg@2x_t.webp') 2x
       );
     }
-    @include retina3 {
+    @include retinax3 {
       background-image: url('../images/hero/hero-bg@3x_t.jpg');
       background-image: -webkit-image-set(
         url('../images/hero/hero-bg@3x_t.webp') 3x
       );
     }
-    @include retina4 {
+    @include retinax4 {
       background-image: url('../images/hero/hero-bg@4x_t.jpg');
       background-image: -webkit-image-set(
         url('../images/hero/hero-bg@4x_t.webp') 4x
@@ -58,25 +59,26 @@
   }
 
   @media screen and (min-width: 1360px) {
+    max-width: 1360px;
     @include section(279, 284);
     // {:desktop} screen
     background-image: url('../images/hero/hero-bg_d.jpg');
     background-image: -webkit-image-set(
       url('../images/hero/hero-bg_d.webp') 1x
     );
-    @include retina2 {
+    @include retinax2 {
       background-image: url('../images/hero/hero-bg@2x_d.jpg');
       background-image: -webkit-image-set(
         url('../images/hero/hero-bg@2x_d.webp') 2x
       );
     }
-    @include retina3 {
+    @include retinax3 {
       background-image: url('../images/hero/hero-bg@3x_d.jpg');
       background-image: -webkit-image-set(
         url('../images/hero/hero-bg@3x_d.webp') 3x
       );
     }
-    @include retina4 {
+    @include retinax4 {
       background-image: url('../images/hero/hero-bg@4x_d.jpg');
       background-image: -webkit-image-set(
         url('../images/hero/hero-bg@4x_d.webp') 4x

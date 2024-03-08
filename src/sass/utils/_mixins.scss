@@ -3,7 +3,7 @@
   padding-bottom: $pb;
 }
 
-@mixin retina2 {
+@mixin retinax2 {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -11,7 +11,7 @@
   }
 }
 
-@mixin retina3 {
+@mixin retinax3 {
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
@@ -19,7 +19,7 @@
   }
 }
 
-@mixin retina4 {
+@mixin retinax4 {
   @media (min-device-pixel-ratio: 4),
     (min-resolution: 384dpi),
     (min-resolution: 4dppx) {

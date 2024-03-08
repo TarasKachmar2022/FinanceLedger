@@ -9,18 +9,19 @@
 }
 
 .blog__thumb {
-  width: 320px;
+  max-width: 320px;
   margin-left: -20px;
+  margin-right: -20px;
 
   @media screen and (min-width: 768px) {
-    width: 384px;
+    max-width: 384px;
     order: 1;
     margin-right: -20px;
     margin-left: 0;
   }
 
   @media screen and (min-width: 1360px) {
-    width: 680px;
+    max-width: 680px;
   }
 }
 
@@ -64,7 +65,13 @@
 }
 
 .blog__btn {
+  min-width: 184px;
   height: 47px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 196px;
+    height: 50px;
+  }
 
   &:hover,
   &:focus {
