@@ -49,16 +49,6 @@
 }
 
 .contact__title {
-  font-weight: var(--fw-s);
-  font-size: var(--fs-section-title);
-  line-height: 1.26;
-
-  @media screen and (min-width: 1360px) {
-    line-height: 1.26;
-  }
-}
-
-.contact__title {
   width: 147px;
   margin-bottom: 34px;
 

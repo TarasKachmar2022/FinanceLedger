@@ -13,7 +13,7 @@
 }
 
 .team__descr {
-  line-height: 1.63;
+  line-height: var(--lh-team-descr);
   margin-bottom: 37px;
 
   @media screen and (min-width: 768px) {
@@ -100,10 +100,10 @@
 .team__subtitle {
   font-weight: var(--fw-m);
   font-size: var(--fs-team-subtitle);
-  line-height: 1.26;
+  line-height: var(--lh-team-subtitle);
   margin-bottom: 11px;
 }
 
 .team__subdescr {
-  line-height: 1.63;
+  line-height: var(--lh-team-subdescr);
 }

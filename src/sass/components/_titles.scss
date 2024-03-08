@@ -1,36 +1,36 @@
 .main-title {
   font-weight: var(--fw-s);
   font-size: var(--fs-main-title-m);
-  line-height: 1.27;
+  line-height: var(--lh-main-title-m);
 
   @media screen and (min-width: 768px) {
     font-size: var(--fs-main-title-t);
-    line-height: 1.2;
+    line-height: var(--lh-main-title-t);
   }
 }
 
 .uppertitle {
   font-weight: var(--fw-m);
   font-size: var(--fs-uppertitle-m);
-  line-height: 1.67;
+  line-height: var(--lh-uppertitle-m);
 
   @media screen and (min-width: 768px) {
     font-size: var(--fs-uppertitle-t);
-    line-height: 1.65;
+    line-height: var(--lh-uppertitle-t);
   }
 }
 
 .section-title {
   font-weight: var(--fw-s);
   font-size: var(--fs-section-title);
-  line-height: 1.26;
+  line-height: var(--lh-section-title);
 }
 
 .description {
-  line-height: 1.63;
+  line-height: var(--lh-description-m);
 
   @media screen and (min-width: 768px) {
     font-size: var(--fs-description-t);
-    line-height: 1.56;
+    line-height: var(--lh-description-t);
   }
 }

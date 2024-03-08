@@ -6,12 +6,12 @@
 
   @media screen and (min-width: 320px) {
     font-size: var(--fs-logo-m);
-    line-height: 1.31;
+    line-height: var(--lh-logo-m);
   }
 
   @media screen and (min-width: 768px) {
     font-size: var(--fs-logo-t);
-    line-height: 1.2;
+    line-height: var(--lh-logo-t);
     transition-property: scale;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-function);
