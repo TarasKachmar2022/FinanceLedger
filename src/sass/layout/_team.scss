@@ -96,12 +96,14 @@
     padding: 14px;
   }
 }
+
 .team__subtitle {
   font-weight: var(--fw-m);
-  font-size: 23px;
+  font-size: var(--fs-team-subtitle);
   line-height: 1.26;
   margin-bottom: 11px;
 }
+
 .team__subdescr {
   line-height: 1.63;
 }

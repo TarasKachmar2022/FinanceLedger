@@ -19,7 +19,7 @@
   transition-timing-function: var(--timing-function);
 
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: var(--fs-btn-t);
     line-height: 1.56;
   }
 

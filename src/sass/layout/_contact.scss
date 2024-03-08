@@ -50,11 +50,10 @@
 
 .contact__title {
   font-weight: var(--fw-s);
-  font-size: 38px;
+  font-size: var(--fs-section-title);
   line-height: 1.26;
 
   @media screen and (min-width: 1360px) {
-    font-size: 38px;
     line-height: 1.26;
   }
 }
