@@ -1,7 +1,5 @@
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %centeredFlex;
   color: var(--accent-cl);
 
   @media screen and (min-width: 320px) {
