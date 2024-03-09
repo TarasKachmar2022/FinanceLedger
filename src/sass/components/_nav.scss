@@ -47,7 +47,7 @@
   }
 }
 
-._active {
+._site-nav__link--current {
   &::after {
     display: block;
     content: '';

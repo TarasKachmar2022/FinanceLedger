@@ -68,16 +68,18 @@ function changeSection(navItem) {
 }
 
 function addClass(navElement) {
-  navElement.classList.add('_active');
+  navElement.classList.add('_site-nav__link--current');
 }
 
 function deleteClass(elementID) {
-  const elementsForDelete = document.querySelectorAll('._active');
+  const elementsForDelete = document.querySelectorAll(
+    '._site-nav__link--current'
+  );
   if (elementsForDelete.length <= 1) return;
   for (let index = 0; index < elementsForDelete.length; index++) {
     const elementForDelete = elementsForDelete[index];
-    if (elementID !== elementForDelete) {
-      elementForDelete.classList.remove('_active');
+    if (elementID !== elementForDelete.getAttribute('href').substring(1)) {
+      elementForDelete.classList.remove('_site-nav__link--current');
     }
   }
 }
